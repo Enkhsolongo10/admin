@@ -1,10 +1,10 @@
 export function BusinessCard ({user}) {
     console.log(user);
+ 
     return (
         <div className="card-container">
             <div>
                 <div className="businessCard">
-                    
                     <div className="card-leftside">
                         <div className="user">
                             <div className="names">
@@ -20,15 +20,23 @@ export function BusinessCard ({user}) {
                         <p>{user.address}</p>
                         </div>
                     </div> 
-
-                    <div className="card-rightside">
-                       
-                    </div>
-
                 </div>
-
             </div>
-
         </div>
-        );
+    );
 };
+
+// const userList = ["John", "Bella"]
+// export function App () {
+//     let index = 0;
+//     let user = userList[index];
+//     return (
+//         <div className="App">
+//             <button onClick={() => {
+//                 index++;
+//             }} 
+//             >Next</button>
+//             <p>{user}</p>
+//         </div>
+//     );
+// };
