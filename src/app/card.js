@@ -1,5 +1,4 @@
-export function BusinessCard ({user}) {
-    console.log(user);
+export function BusinessCard ({person}) {
  
     return (
         <div className="card-container">
@@ -8,16 +7,16 @@ export function BusinessCard ({user}) {
                     <div className="card-leftside">
                         <div className="user">
                             <div className="names">
-                            <h2 className="name1">{user.firstName}</h2>
-                            <h2 className="name2">{user.lastName}</h2>
+                            <h2 className="name1">{person.firstName}</h2>
+                            <h2 className="name2">{person.lastName}</h2>
                             </div>
                             <p className="designer">Designer</p>
                         </div> 
                         <div className="paragraphs">
-                        <p>{user.companyName}</p>
-                        <p>{user.email}</p>
-                        <p>{user.phoneNumber}</p>
-                        <p>{user.address}</p>
+                        <p>{person.companyName}</p>
+                        <p>{person.email}</p>
+                        <p>{person.phoneNumber}</p>
+                        <p>{person.address}</p>
                         </div>
                     </div> 
                 </div>
@@ -27,15 +26,15 @@ export function BusinessCard ({user}) {
 };
 
 // const userList = ["John", "Bella"]
-// export function App () {
+// export fusernction App () {
 //     let index = 0;
 //     let user = userList[index];
-//     return (
+//     retuserrn (
 //         <div className="App">
-//             <button onClick={() => {
+//             <busertton onClick={() => {
 //                 index++;
 //             }} 
-//             >Next</button>
+//             >Next</busertton>
 //             <p>{user}</p>
 //         </div>
 //     );

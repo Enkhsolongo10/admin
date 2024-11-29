@@ -8,10 +8,13 @@ import USERS from './users.json' //json-g tomoor ugnu gsn
 export default function Page() {
     return ( 
       <div>
-        {USERS.map(user =>(
-          <BusinessCard key={user.id} user={user}/>
+        {USERS.map(people =>(
+          <BusinessCard key={people.id} person={people}/>
         ))}; 
-      </div>
+      </div>   
+
+
+
         // <App/>
       // // <div className="bg-red-600">  
       //     {/* <div className="grid gap-10">
