@@ -3,7 +3,7 @@ export function App () {
     const [count, setCount] = useState(0); //standart syntax gsn 
   
     const addCount = () => {
-      setCount(count+1);
+      setCount(count-1);
     }
 
     return (
